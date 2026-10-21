@@ -1,0 +1,44 @@
+﻿=== Skills library update start 2026-10-20T21:04:42 ===
+git pull: OK=174 FAIL=0
+Sources: 240
+SKILL.md files: 60558
+Unique skills: 42225
+Domains: A:525 B:60 C:2357 D:173 E:193 F:139 G:41 GEN:1715 H:852 I:544 J:713 K:1597 L:20341 M:1183 N:947 O:622 P:4477 Q:307 R:885 S:666 T:338 U:145 V:1548 W:1330 X:38 Y:183 Z:306
+Elapsed: 98.9s
+Files scanned: 46786
+Flagged files: 646 (skills: 207)
+Summary: HIGH=290 MEDIUM=302 LOW=54
+Elapsed: 64.7s
+  HIGH affaanm-ecc\scripts\build-pi-core.js :: curl pipe trß╗▒c tiß║┐p v├áo shell; wget pipe trß╗▒c tiß║┐p v├áo shell
+  HIGH affaanm-ecc\scripts\lib\powershell-destructive-command.js :: Invoke-Expression ΓÇö chß║íy chuß╗ùi ─æß╗Öng (PS)
+  HIGH affaanm-ecc\tests\hooks\gateguard-fact-force.test.js :: Invoke-Expression ΓÇö chß║íy chuß╗ùi ─æß╗Öng (PS); Ghi ─æ├¿ trß╗▒c tiß║┐p ß╗ò ─æ─⌐a; ─Éß╗ìc key/credential ng╞░ß╗¥i d├╣ng
+  HIGH affaanm-ecc\tests\hooks\governance-capture.test.js :: Invoke-Expression ΓÇö chß║íy chuß╗ùi ─æß╗Öng (PS); ─Éß╗ìc key/credential ng╞░ß╗¥i d├╣ng; Hardcoded secret/token trong code
+  HIGH affaanm-ecc\tests\hooks\observe-secret-redaction.test.js :: Hardcoded secret/token trong code
+  HIGH affaanm-ecc\tests\hooks\pre-bash-commit-quality.test.js :: Hardcoded secret/token trong code
+  HIGH affaanm-ecc\tests\hooks\skill-run-tracker.test.js :: Hardcoded secret/token trong code
+  HIGH affaanm-ecc\tests\lib\control-pane-actions.test.js :: rm -rf th╞░ mß╗Ñc home
+  HIGH affaanm-ecc\tests\lib\gateguard-readonly-shell.test.js :: Invoke-Expression ΓÇö chß║íy chuß╗ùi ─æß╗Öng (PS)
+  HIGH affaanm-ecc\tests\lib\platform-launch.test.js :: Invoke-Expression ΓÇö chß║íy chuß╗ùi ─æß╗Öng (PS)
+  HIGH affaanm-ecc\tests\lib\powershell-destructive-command.test.js :: Invoke-Expression ΓÇö chß║íy chuß╗ùi ─æß╗Öng (PS)
+  HIGH affaanm-ecc\tests\lib\shell-substitution.test.js :: curl pipe trß╗▒c tiß║┐p v├áo shell
+  HIGH affaanm-ecc\tests\scripts\ecc-dashboard.test.js :: rm -rf th╞░ mß╗Ñc home
+  HIGH affaanm-ecc\tests\scripts\profile-interactive.test.js :: Hardcoded secret/token trong code
+  HIGH alirezarezvani-claude-skills\engineering\skills\skill-tester\tests\test_security_scorer.py :: Truy cß║¡p file account hß╗ç thß╗æng; Hardcoded secret/token trong code
+=== VERIFY LIBRARY 2026-10-20T14:13:57.406Z ===
+[ok] file: INDEX.md
+[ok] file: index.json
+[ok] file: sources.json
+[ok] file: SKILLS.md
+[ok] file: README.md
+[ok] file: usage-log.md
+[ok] index tuß╗òi 0.0h
+[ok] security tuß╗òi 0.0h
+[ok] nguß╗ôn 0-skill (Tier C): 12
+[ok] index: 42225 skills duy nhß║Ñt
+[ok] to├án bß╗Ö path trong index tß╗ôn tß║íi thß╗▒c
+[ok] security: 46786 file qu├⌐t, 646 flagged (H=290/M=302/L=54)
+[ok] session cache hoß║ít ─æß╗Öng (0.1h)
+[ok] dung l╞░ß╗úng 3.88 / 10 GB
+
+Kß║┐t luß║¡n: KHß╗ÄE ΓÇö kh├┤ng c├│ vß║Ñn ─æß╗ü
+=== Done 2026-10-20T21:13:57 ===
