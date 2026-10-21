@@ -85,10 +85,40 @@ if (pos.length === 0) {
 }
 
 const mode = pos[0] === '--count' ? 'count' : 'search';
-const query = mode === 'count' ? pos.slice(1).join(' ') : pos.join(' ');
+let query = mode === 'count' ? pos.slice(1).join(' ') : pos.join(' ');
+const words = query.split(/\s+/).filter((w) => w.length > 1).map((w) => w.toLowerCase());
+// Mở rộng từ khóa tiếng Việt → tiếng Anh (kho chủ yếu mô tả bằng tiếng Anh)
+const VN_EN = [
+  ['toán', 'math|algebra|calculus'],
+  ['văn', 'literary|writing|essay'],
+  ['dạy', 'teaching|tutor|lesson'],
+  ['giảng', 'teaching|tutor|lesson'],
+  ['học', 'learning|tutor'],
+  ['lỗi', 'bug|error|debug'],
+  ['chậm', 'performance|optimization|profiling'],
+  ['ảnh', 'image|photo|picture'],
+  ['vẽ', 'chart|plot|visualization'],
+  ['nhạc', 'music|audio'],
+  ['bảo mật', 'security|pentest'],
+  ['tài chính', 'finance|trading|accounting'],
+  ['kế toán', 'accounting|finance'],
+  ['bán hàng', 'marketing|seo|sales'],
+  ['điện thoại', 'mobile|android|ios'],
+  ['dịch', 'translate|translation'],
+  ['thuyết trình', 'presentation|slides|pptx'],
+  ['tài liệu', 'documentation'],
+  ['luật', 'legal|law'],
+  ['y tế', 'medical|health'],
+  ['sức khỏe', 'medical|health'],
+  ['thuật toán', 'algorithm'],
+  ['kiểm tra', 'test|quiz'],
+];
+let alts = [];
+const qLower = query.toLowerCase();
+for (const [vn, en] of VN_EN) if (qLower.includes(vn)) alts.push(en);
+if (alts.length) query += ' | ' + [...new Set(alts.join('|').split('|'))].join('|');
 let re;
 try { re = new RegExp(query, 'i'); } catch { console.error(`Regex khong hop le: ${query}`); process.exit(1); }
-const words = query.split(/\s+/).filter((w) => w.length > 1).map((w) => w.toLowerCase());
 
 // Tập skill có script bị flag (từ security.json) để cảnh báo
 const riskMap = new Map();
