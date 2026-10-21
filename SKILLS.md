@@ -1136,6 +1136,8 @@ Nguồn taste/voice/persona chuyên sâu trong kho (grep khi cần): đợt 10 �
 - **Tài chính kế toán**: openaccountant (44 skills P&L/tax/budget) · gajeto-financeskills · cfo-expert (GAAP) · brainbytes-finance (51 skills)
 - **Data engineering**: vaquarkhan (74 workflows) · unknown333 (dbt/Airflow/Spark/Dagster) · etl-skills
 - **Support & HR**: composio-support (triage/SLA/sentiment) · recruiting-skills (JD/screening bias-aware) · HRClaw
+- **Tra cứu internet/thông tin**: skill `tracuu` — tìm đa nguồn → đối chiếu → kiểm chứng → trích nguồn kèm ngày; kết hợp web search/fetch của agent. *On-call: chỉ dùng khi user gọi, đọc file `D:\Skills\tools\on-demand\tracuu\SKILL.md`.*
+- **Văn phòng (Word/PPT/Excel/PDF)**: skill `vanphong` — nạp skill chính chủ đúng loại file (anthropics-skills: docx/pptx/xlsx/pdf · claude-office-skills · iOfficeAI-OfficeCLI · markdown-exporter) rồi làm theo workflow. *On-call: chỉ dùng khi user gọi, đọc file `D:\Skills\tools\on-demand\vanphong\SKILL.md`.*
 - **Taste chuyên sâu từ kho**: leonxlnx-taste-skill · madebymustafa-design-taste · rblalock-omakaseagent · theonly1me-shadowclone (học gu user) · soheilmomeniii-no-slop
 - **Humanizer đa ngôn ngữ**: blader-humanizer (EN) · op7418-humanizer-zh (ZH) · bejek-humanizer-czech (CS) · NulightJens-humanizer-stack (2-pass) · AIScientists-Dev-academic-humanizer (bài báo)
 - **Persona/cảm xúc nhân bản**: acnlabs-openpersona · DiveWind-soul-agent · zhwenchao-jungian-soul-skills
