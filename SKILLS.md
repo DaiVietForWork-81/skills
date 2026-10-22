@@ -1138,6 +1138,7 @@ Nguồn taste/voice/persona chuyên sâu trong kho (grep khi cần): đợt 10 �
 - **Support & HR**: composio-support (triage/SLA/sentiment) · recruiting-skills (JD/screening bias-aware) · HRClaw
 - **Tra cứu internet/thông tin**: skill `tracuu` — tìm đa nguồn → đối chiếu → kiểm chứng → trích nguồn kèm ngày; kết hợp web search/fetch của agent. *On-call: chỉ dùng khi user gọi, đọc file `D:\Skills\tools\on-demand\tracuu\SKILL.md`.*
 - **Văn phòng (Word/PPT/Excel/PDF)**: skill `vanphong` — nạp skill chính chủ đúng loại file (anthropics-skills: docx/pptx/xlsx/pdf · claude-office-skills · iOfficeAI-OfficeCLI · markdown-exporter) rồi làm theo workflow. *On-call: chỉ dùng khi user gọi, đọc file `D:\Skills\tools\on-demand\vanphong\SKILL.md`.*
+- **Giải hình học phổ thông**: skill `hinhoc` — liệt kê giả thiết → nhận dạng dạng bài (lớp 6-12) → tính/chứng minh → kiểm chứng SymPy bắt buộc; bí thì tọa độ hóa. *On-call: chỉ dùng khi user gọi, đọc file `D:\Skills\tools\on-demand\hinhoc\SKILL.md`.*
 - **Taste chuyên sâu từ kho**: leonxlnx-taste-skill · madebymustafa-design-taste · rblalock-omakaseagent · theonly1me-shadowclone (học gu user) · soheilmomeniii-no-slop
 - **Humanizer đa ngôn ngữ**: blader-humanizer (EN) · op7418-humanizer-zh (ZH) · bejek-humanizer-czech (CS) · NulightJens-humanizer-stack (2-pass) · AIScientists-Dev-academic-humanizer (bài báo)
 - **Persona/cảm xúc nhân bản**: acnlabs-openpersona · DiveWind-soul-agent · zhwenchao-jungian-soul-skills
