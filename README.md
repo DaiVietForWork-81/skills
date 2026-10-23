@@ -1,5 +1,13 @@
 # D:\Skills — Thư viện Skills cho AI Agent
 
+> **Repo GitHub này chứa phần "bộ não" của hệ thống:** `skills-core/` (5
+> skill nền toàn cục) · `tools/` (6 script + 8 skill on-call) · tài liệu
+> điều phối (`SKILLS.md`, `AGENTS.md`, `README.md`, `usage-log.md`).
+> Các nguồn thư viện bên thứ ba (240 repo, ~3,85 GB) và file tự sinh
+> (`INDEX.md`, `index.json`, `sources.json`...) **không được track** —
+> máy mới clone sources về rồi chạy `node tools\build-index.mjs` là có.
+> Hướng dẫn cài đặt: xem `skills-core/README.md`.
+
 > Kho skills dùng chung để AI agent **tự tìm kiếm, đối chiếu và lựa chọn**
 > skill phù hợp cho từng nhiệm vụ — thay vì nạp toàn bộ vào ngữ cảnh.
 
