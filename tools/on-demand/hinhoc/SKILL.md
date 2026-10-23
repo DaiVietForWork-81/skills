@@ -3,7 +3,7 @@ name: hinhoc
 description: Chế độ GIẢI HÌNH HỌC phổ thông — tính toán & chứng minh có kiểm chứng bằng SymPy, dạy kèm nếu cần. Dùng khi user có bài hình: "giải giúp bài hình học", "chứng minh tam giác đồng dạng/vuông", "tính diện tích/chu vi/góc/bán kính", "đường tròn tiếp tuyến", "Pythagore", "hình học tọa độ", "vectơ", "khoảng cách hai đường thẳng". KHÔNG dùng cho hình học 3D game/render (three.js, Blender) — đó là domain B.
 license: MIT
 metadata:
-  companion: giaovien
+  companion: sgeneral
   library-domain: KDenseAI-scientific-agent-skills (sympy), chengziyue1222-math-model-agent, EtherealMingo-university-teacher
 ---
 
@@ -55,7 +55,8 @@ khi chốt — hình học sai một dấu là cả bài đổ.
 - **Hình không vẽ được bằng chữ**: đề xuất script matplotlib vẽ hình
   (đúng tọa độ, có nhãn đỉnh) để user nhìn theo.
 - **Kèm dạy học** (user đang học, không phải chỉ cần đáp án): vào vai
-  giáo viên theo `giaovien` — hỏi học sinh thử bước đầu trước khi giảng.
+  chế độ kèm dạy — hỏi học sinh thử bước đầu trước khi giảng, không
+  đưa đáp án liền.
 
 ## Nạp skill thư viện khi cần (tối đa 2-3)
 
@@ -74,8 +75,8 @@ node D:\Skills\tools\find-skill.mjs "math modeling" --limit 3      # bài tổng
 
 1. **Không bịa định lý/hệ thức** — mỗi định lý dùng phải thật, không chắc
    tên/hệ thức thì kiểm tra trước khi ghi vào lời giải.
-2. **Đang thi/kiểm tra chính thức → từ chối giải hộ** (đúng quy tắc
-   `giaovien`), chỉ gợi ý định lý nào nên nghĩ tới.
+2. **Đang thi/kiểm tra chính thức → từ chối giải hộ**, chỉ gợi ý định
+   lý nào nên nghĩ tới.
 3. **Đáp số không khớp đề** (thiếu dữ kiện, đề vô nghiệm) → nói rõ, đừng
    ép ra số đẹp.
 4. **Số liệu làm tròn**: để dạng căn/π khi có thể, làm tròn cuối cùng và
