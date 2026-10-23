@@ -29,3 +29,12 @@
 | 2026-10-20 13:59 | sgeneral | go giaovien+debug khoi moi noi auto-load, ban goc ve tools/on-demand, chi dung khi duoc goi | ok |
 | 2026-10-20 14:50 | sgeneral | Multi-Agent Workspace build Phase 0-2 + Turbo core | ok |
 | 2026-10-21 14:14 | debug | tim va sua tham chieu treo CACHE.md + skills-library trong AGENTS.md, taste, small-model, SKILLS.md FAQ | good |
+| 2026-10-21 14:26 | sgeneral | Tim skill khí động học tên lửa - khong co skill phu hop, xu ly truc tiep | ok |
+| 2026-10-21 14:27 | seaborn | Viet script Python doc CSV doanh thu va ve bieu do cot theo thang | good |
+| 2026-10-21 14:35 | sgeneral | tao 2 skill on-call tracuu + vanphong, verify ten skill office chinh chu | ok |
+| 2026-10-21 14:55 | docx-manipulation | De cuong on tap Tieng Anh 9 Units 1-3 (Local community, City life, Healthy living) - docx 3 trang A4 co dap an, tu vung  | good |
+| 2026-10-21 15:35 | docx-manipulation | Thiet ke lai de cuong Anh 9 thanh 4 trang A4: thanh tieu de mau, bang tu vung theo Unit, khung ngu phap, bai tap + dap a | good |
+| 2026-10-21 15:39 | sgeneral | Orbit CLI bug-fix batch (5 bugs) | good |
+| 2026-10-21 15:44 | docx-manipulation | Chia de cuong Anh 9 thanh 3 phan theo Unit I/II/III + dap an chi tiet trang cuoi, 4 trang A4 | good |
+| 2026-10-22 13:59 | sgeneral | tao skill on-call hinhoc (da verify kho khong co skill hinh hoc pho thong) | ok |
+| 2026-10-23 15:02 | sgeneral | them 4 skill on-call (vanhoc, lyhoa, tienganh, vietvan) + README on-demand + clean refs | good |
