@@ -1,9 +1,9 @@
 ---
 name: debug
-description: Chế độ DEBUG kỷ luật — chẩn đoán nguyên nhân gốc rồi mới sửa, không vá mù theo đoán. Dùng khi có lỗi/sai hành vi cần tìm nguyên nhân: "fix giùm bug", "chạy bị lỗi", "traceback này nghĩa là gì", "test thỉnh thoảng fail", "chạy chậm bất thường", "crash", "sai kết quả", "tại sao nó làm vậy", "gỡ lỗi", "không biết lỗi ở đâu". KHÔNG dùng cho viết tính năng mới từ đầu — đó là việc code bình thường (nạp skill theo skills-library/sgeneral).
+description: Chế độ DEBUG kỷ luật — chẩn đoán nguyên nhân gốc rồi mới sửa, không vá mù theo đoán. Dùng khi có lỗi/sai hành vi cần tìm nguyên nhân: "fix giùm bug", "chạy bị lỗi", "traceback này nghĩa là gì", "test thỉnh thoảng fail", "chạy chậm bất thường", "crash", "sai kết quả", "tại sao nó làm vậy", "gỡ lỗi", "không biết lỗi ở đâu". KHÔNG dùng cho viết tính năng mới từ đầu — đó là việc code bình thường (nạp skill theo sgeneral).
 license: MIT
 metadata:
-  companion: skills-library
+  companion: sgeneral
   library-domain: awesomeskills-5-whys, nai0om-buddhist-method, codexstar69-bug-hunter, datadog-agent-skills
 ---
 
