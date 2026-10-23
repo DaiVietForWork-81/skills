@@ -1139,6 +1139,11 @@ Nguồn taste/voice/persona chuyên sâu trong kho (grep khi cần): đợt 10 �
 - **Tra cứu internet/thông tin**: skill `tracuu` — tìm đa nguồn → đối chiếu → kiểm chứng → trích nguồn kèm ngày; kết hợp web search/fetch của agent. *On-call: chỉ dùng khi user gọi, đọc file `D:\Skills\tools\on-demand\tracuu\SKILL.md`.*
 - **Văn phòng (Word/PPT/Excel/PDF)**: skill `vanphong` — nạp skill chính chủ đúng loại file (anthropics-skills: docx/pptx/xlsx/pdf · claude-office-skills · iOfficeAI-OfficeCLI · markdown-exporter) rồi làm theo workflow. *On-call: chỉ dùng khi user gọi, đọc file `D:\Skills\tools\on-demand\vanphong\SKILL.md`.*
 - **Giải hình học phổ thông**: skill `hinhoc` — liệt kê giả thiết → nhận dạng dạng bài (lớp 6-12) → tính/chứng minh → kiểm chứng SymPy bắt buộc; bí thì tọa độ hóa. *On-call: chỉ dùng khi user gọi, đọc file `D:\Skills\tools\on-demand\hinhoc\SKILL.md`.*
+- **Văn học phổ thông**: skill `vanhoc` — phân tích tác phẩm, cảm nhận, nghị luận văn học; nguyên tắc "bám chữ mà nói", không bịa câu thơ/chi tiết, bài đang thi chỉ đưa dàn ý. *On-call: `D:\Skills\tools\on-demand\vanhoc\SKILL.md`.*
+- **Vật lý & hóa học phổ thông**: skill `lyhoa` — đơn vị trước con số sau, cân bằng phương trình trước, kiểm chứng SymPy; cấm hướng dẫn chế chất nguy hiểm. *On-call: `D:\Skills\tools\on-demand\lyhoa\SKILL.md`.*
+- **Tiếng Anh**: skill `tienganh` — dịch ý không dịch chữ, sửa lỗi kèm giải thích "vì sao", luyện IELTS/TOEIC, giữ giọng người viết. *On-call: `D:\Skills\tools\on-demand\tienganh\SKILL.md`.*
+- **Viết văn bản (đơn từ, email, báo cáo, content)**: skill `vietvan` — khuôn đúng loại văn bản, rõ trước hay sau, không bịa dữ kiện, đánh dấu chỗ `[...]` cho user điền. *On-call: `D:\Skills\tools\on-demand\vietvan\SKILL.md`.*
+- **Mục lục on-call đầy đủ**: `D:\Skills\tools\on-demand\README.md` (bảng skill + quy ước form chuẩn để thêm mới).
 - **Taste chuyên sâu từ kho**: leonxlnx-taste-skill · madebymustafa-design-taste · rblalock-omakaseagent · theonly1me-shadowclone (học gu user) · soheilmomeniii-no-slop
 - **Humanizer đa ngôn ngữ**: blader-humanizer (EN) · op7418-humanizer-zh (ZH) · bejek-humanizer-czech (CS) · NulightJens-humanizer-stack (2-pass) · AIScientists-Dev-academic-humanizer (bài báo)
 - **Persona/cảm xúc nhân bản**: acnlabs-openpersona · DiveWind-soul-agent · zhwenchao-jungian-soul-skills
