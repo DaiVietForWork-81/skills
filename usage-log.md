@@ -38,3 +38,6 @@
 | 2026-10-21 15:44 | docx-manipulation | Chia de cuong Anh 9 thanh 3 phan theo Unit I/II/III + dap an chi tiet trang cuoi, 4 trang A4 | good |
 | 2026-10-22 13:59 | sgeneral | tao skill on-call hinhoc (da verify kho khong co skill hinh hoc pho thong) | ok |
 | 2026-10-23 15:02 | sgeneral | them 4 skill on-call (vanhoc, lyhoa, tienganh, vietvan) + README on-demand + clean refs | good |
+| 2026-10-24 13:05 | markitdown | Optimize PDF/DOCX/Exam reading and parsing | good |
+| 2026-10-25 15:34 | sgeneral | Orbit Learn Chill Study branding sync & video prompts | good |
+| 2026-10-26 15:13 | sgeneral | Fix bugs, verify Bot + Web + Vercel live sync | good |
