@@ -3,7 +3,7 @@ import { join, relative, basename, dirname } from 'node:path';
 import { execFileSync } from 'node:child_process';
 
 const ROOT = 'D:\\Skills';
-const EXCLUDE_DIRS = new Set(['tools', 'cache']); // cache/ = session cache, không phải nguồn
+const EXCLUDE_DIRS = new Set(['tools', 'cache', 'skills-core']); // vùng agent sở hữu, không phải nguồn thư viện
 const DESC_MAX = 150;
 const SAMPLE_COUNT = 8;
 const SAMPLE_DESC_MAX = 120;
