@@ -6,13 +6,20 @@ $root = 'D:\Skills'
 $log  = Join-Path $root 'tools\update-log.txt'
 "=== Skills library update start $(Get-Date -Format s) ===" | Out-File -FilePath $log -Append -Encoding utf8
 
-# 1) git pull mọi nguồn (ff-only, bỏ qua nguồn lỗi)
+# 1) git pull mọi nguồn (ff-only, bỏ qua nguồn lỗi) — chống treo prompt + log rõ nguồn lỗi
+$env:GIT_TERMINAL_PROMPT = '0'
 $pulled = 0; $failed = 0; $failedList = @()
-Get-ChildItem $root -Directory | Where-Object { Test-Path (Join-Path $_.FullName '.git') } | ForEach-Object {
-  git -C $_.FullName pull --ff-only --quiet 2>$null
-  if ($LASTEXITCODE -eq 0) { $pulled++ } else { $failed++; $failedList += $_.Name }
+$srcDirs = @(Get-ChildItem $root -Directory | Where-Object { Test-Path (Join-Path $_.FullName '.git') })
+"pulling $($srcDirs.Count) nguon git..." | Out-File -FilePath $log -Append -Encoding utf8
+foreach ($d in $srcDirs) {
+  $err = git -C $d.FullName pull --ff-only --quiet 2>&1
+  if ($LASTEXITCODE -eq 0) { $pulled++ } else {
+    $failed++
+    $errLine = (($err | Select-Object -First 1) | Out-String).Trim()
+    $failedList += "$($d.Name): $errLine"
+  }
 }
-$failedPart = if ($failedList.Count) { ' (' + ($failedList -join ', ') + ')' } else { '' }
+$failedPart = if ($failedList.Count) { "`n  " + ($failedList -join "`n  ") } else { '' }
 "git pull: OK=$pulled FAIL=$failed$failedPart" | Out-File -FilePath $log -Append -Encoding utf8
 
 # 2) Rebuild index (kèm domain tag + SHA nguồn)
