@@ -42,3 +42,48 @@ Elapsed: 64.7s
 
 Kß║┐t luß║¡n: KHß╗ÄE ΓÇö kh├┤ng c├│ vß║Ñn ─æß╗ü
 === Done 2026-10-20T21:13:57 ===
+=== Skills library update start 2026-11-02T21:39:07 ===
+=== Skills library update start 2026-11-02T21:52:37 ===
+git pull: OK=180 FAIL=1 (LerianStudio-ring)
+Sources: 248
+SKILL.md files: 62669
+Unique skills: 43756
+Domains: A:567 B:104 C:3057 D:186 E:225 F:147 G:44 GEN:1940 H:870 I:550 J:751 K:1655 L:20344 M:1199 N:974 O:679 P:4501 Q:311 R:900 S:734 T:381 U:154 V:1574 W:1373 X:40 Y:189 Z:307
+Elapsed: 157.3s
+Files scanned: 60298
+Flagged files: 763 (skills: 251)
+Summary: HIGH=348 MEDIUM=360 LOW=55
+Elapsed: 171.7s
+  HIGH affaanm-ecc\scripts\build-pi-core.js :: curl pipe trß╗▒c tiß║┐p v├áo shell; wget pipe trß╗▒c tiß║┐p v├áo shell
+  HIGH affaanm-ecc\scripts\lib\powershell-destructive-command.js :: Invoke-Expression ΓÇö chß║íy chuß╗ùi ─æß╗Öng (PS)
+  HIGH affaanm-ecc\tests\hooks\gateguard-fact-force.test.js :: Invoke-Expression ΓÇö chß║íy chuß╗ùi ─æß╗Öng (PS); Ghi ─æ├¿ trß╗▒c tiß║┐p ß╗ò ─æ─⌐a; ─Éß╗ìc key/credential ng╞░ß╗¥i d├╣ng
+  HIGH affaanm-ecc\tests\hooks\governance-capture.test.js :: Invoke-Expression ΓÇö chß║íy chuß╗ùi ─æß╗Öng (PS); ─Éß╗ìc key/credential ng╞░ß╗¥i d├╣ng; Hardcoded secret/token trong code
+  HIGH affaanm-ecc\tests\hooks\observe-secret-redaction.test.js :: Hardcoded secret/token trong code
+  HIGH affaanm-ecc\tests\hooks\pre-bash-commit-quality.test.js :: Hardcoded secret/token trong code
+  HIGH affaanm-ecc\tests\hooks\skill-run-tracker.test.js :: Hardcoded secret/token trong code
+  HIGH affaanm-ecc\tests\lib\control-pane-actions.test.js :: rm -rf th╞░ mß╗Ñc home
+  HIGH affaanm-ecc\tests\lib\gateguard-readonly-shell.test.js :: Invoke-Expression ΓÇö chß║íy chuß╗ùi ─æß╗Öng (PS)
+  HIGH affaanm-ecc\tests\lib\platform-launch.test.js :: Invoke-Expression ΓÇö chß║íy chuß╗ùi ─æß╗Öng (PS)
+  HIGH affaanm-ecc\tests\lib\powershell-destructive-command.test.js :: Invoke-Expression ΓÇö chß║íy chuß╗ùi ─æß╗Öng (PS)
+  HIGH affaanm-ecc\tests\lib\shell-substitution.test.js :: curl pipe trß╗▒c tiß║┐p v├áo shell
+  HIGH affaanm-ecc\tests\scripts\ecc-dashboard.test.js :: rm -rf th╞░ mß╗Ñc home
+  HIGH affaanm-ecc\tests\scripts\profile-interactive.test.js :: Hardcoded secret/token trong code
+  HIGH alirezarezvani-claude-skills\engineering\coding-agent-rollout\skills\coding-agent-rollout\scripts\claude_md_layering_audit.py :: Hardcoded secret/token trong code
+=== VERIFY LIBRARY 2026-11-02T15:09:52.000Z ===
+[ok] file: INDEX.md
+[ok] file: index.json
+[ok] file: sources.json
+[ok] file: SKILLS.md
+[ok] file: README.md
+[ok] file: usage-log.md
+[ok] index tuß╗òi 0.0h
+[ok] security tuß╗òi 0.0h
+[ok] nguß╗ôn 0-skill (Tier C): 13
+[ok] index: 43756 skills duy nhß║Ñt
+[ok] to├án bß╗Ö path trong index tß╗ôn tß║íi thß╗▒c
+[ok] security: 60298 file qu├⌐t, 763 flagged (H=348/M=360/L=55)
+[ok] session cache hoß║ít ─æß╗Öng (0.3h)
+[ok] dung l╞░ß╗úng 5.09 / 10 GB
+
+Kß║┐t luß║¡n: KHß╗ÄE ΓÇö kh├┤ng c├│ vß║Ñn ─æß╗ü
+=== Done 2026-11-02T22:09:52 ===

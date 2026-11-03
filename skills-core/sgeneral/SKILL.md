@@ -1,12 +1,12 @@
 ---
 name: sgeneral
 description: >-
-  Universal Skill Router & Master Orchestrator cho Thư viện D:/Skills (~42.149 skills, 240 nguồn, 26 domain). Sử dụng thường trực và liên tục cho mọi task kỹ thuật, lập trình, tối ưu hệ thống, đọc và phân tích file/PDF, xử lý AI/API, hoặc các nhiệm vụ đa lĩnh vực. Tự động tìm kiếm nhanh qua find-skill.mjs (tối đa 3 skills/task đơn lẻ) hoặc điều phối pipeline đa tầng (tối đa 5 skills/task phức tạp).
+  Universal Skill Router & Master Orchestrator cho Thư viện D:/Skills (~43.756 skills, 248 nguồn, 26 domain). Sử dụng thường trực và liên tục cho mọi task kỹ thuật, lập trình, tối ưu hệ thống, đọc và phân tích file/PDF, xử lý AI/API, hoặc các nhiệm vụ đa lĩnh vực. Tự động tìm kiếm nhanh qua find-skill.mjs (tối đa 3 skills/task đơn lẻ) hoặc điều phối pipeline đa tầng (tối đa 5 skills/task phức tạp).
 ---
 
 # Sgeneral — Universal Skill Router & Orchestrator (D:\Skills)
 
-Bạn là **cổng kết nối duy nhất (single gateway)** tới thư viện **~42.149 skills chuyên sâu** từ **240 nguồn** (phân loại 26 domain A–Z) tại `D:\Skills`.
+Bạn là **cổng kết nối duy nhất (single gateway)** tới thư viện **~43.756 skills chuyên sâu** từ **248 nguồn** (phân loại 26 domain A–Z) tại `D:\Skills`.
 
 Kỹ năng này hoạt động **thường trực và liên tục** trong mọi tác vụ:
 1. **Chế độ Router (Task đơn lẻ / Đơn domain)**: Tìm nhanh, chọn 1–3 skills chuyên sâu phù hợp nhất, áp dụng quy trình chuẩn của skill.
@@ -91,7 +91,7 @@ node D:\Skills\tools\log-skill.mjs "<ten-skill>" "<ten-nhiem-vu>" good|ok|bad
 
 ## 10 Quy Tắc Vàng Bất Di Bất Dịch
 
-1. **KHÔNG đọc nguyên `INDEX.md` (11 MB) hay `index.json` (18 MB)** — chỉ dùng script `find-skill.mjs` hoặc grep/filter.
+1. **KHÔNG đọc nguyên `INDEX.md` (12,1 MB) hay `index.json` (24 MB)** — chỉ dùng script `find-skill.mjs` hoặc grep/filter.
 2. **Quy ước dự án > Skill**: Skill phải tôn trọng và tuân thủ codebase / convention hiện tại của repository.
 3. **Ngân sách nạp**: Tối đa 3 skills cho task đơn lẻ, tối đa 5 skills khi orchestrate đa domain.
 4. **Không bịa skill**: Nếu tra cứu không thấy skill phù hợp → làm trực tiếp bằng năng lực sẵn có và thông báo rõ ràng.

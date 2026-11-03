@@ -10,7 +10,7 @@
 
 | Skill | Vai trò |
 |---|---|
-| `sgeneral` | Router & Orchestrator hợp nhất — cổng vào thư viện D:\Skills (~42.149 skills, 240 nguồn) |
+| `sgeneral` | Router & Orchestrator hợp nhất — cổng vào thư viện D:\Skills (~43.756 skills, 248 nguồn) |
 | `context-cache` | Trí nhớ ngoài: checkpoint tiến độ phiên qua `tools/cache.mjs` |
 | `small-model` | Chế độ model nhỏ 2B-9B: vòng lặp siêu ngắn, script thay não |
 | `taste` | Gu & cảm xúc khi chọn lựa; chọn 1 + lý do khi các phương án ngang nhau |

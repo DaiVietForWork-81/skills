@@ -1,8 +1,8 @@
 # SKILLS.md — Bản đồ phân phối & tuyển chọn Skills
 
 > **FILE QUAN TRỌNG NHẤT của kho `D:\Skills`. AI agent PHẢI đọc file này
-> trước khi dùng kho.** Kho có ~42.100 skills duy nhất trong 240 nguồn
-> (~60.500 file SKILL.md) — nạp bừa sẽ nổ ngữ cảnh ngay lập tức. File này
+> trước khi dùng kho.** Kho có ~43.700 skills duy nhất trong 248 nguồn
+> (~62.700 file SKILL.md) — nạp bừa sẽ nổ ngữ cảnh ngay lập tức. File này
 > tồn tại để agent có **nhận thức (taste)**: biết cái gì nằm ở đâu, cái gì
 > đáng dùng, cái nào bỏ qua, và khi nào thì dừng tìm kiếm.
 >
@@ -39,11 +39,11 @@
 Kho này là một **thư viện tra cứu**, không phải context. Nếu agent cố đọc
 hết (hoặc đọc một phần lớn) kho:
 
-- `INDEX.md` dài ~42.100 dòng (~11,7 MB) — đọc nguyên file là lãng phí
+- `INDEX.md` dài ~43.700 dòng (~12,1 MB) — đọc nguyên file là lãng phí
   hàng trăm nghìn token cho thông tin agent không cần.
-- `index.json` là 1 dòng JSON ~18 MB — tệ hơn nữa với công cụ đọc file.
+- `index.json` là 1 dòng JSON ~24 MB — tệ hơn nữa với công cụ đọc file.
 - Một nguồn lớn như `ThomasMoreAI-legal-skills` chứa **20.293** skills;
-  `sickn33-agentic-awesome-skills` chứa **8.360**. Không ai đọc hết được.
+  `sickn33-agentic-awesome-skills` chứa **8.969**. Không ai đọc hết được.
 
 ### 1.2 Giải pháp: mô hình "thư viện — thẻ cứu kho — kệ sách"
 
@@ -75,7 +75,7 @@ Nếu nhận thấy bản thân đang đọc nhiều hơn thế — dừng lại
 2. **Tối đa 3 skills nạp mỗi lần** làm việc. Nhiều hơn chỉ khi nhiệm vụ gồm
    nhiều mảng rời rạc và agent ghi rõ lý do.
 3. **Tối đa 2–3 nguồn tra cứu mỗi lần.** Dùng bản đồ mục 6 để khoanh vùng,
-   đừng dò khắp 240 nguồn.
+   đừng dò khắp 248 nguồn.
 4. **Tối đa ~6 lượt grep.** Nếu sau 6 lượt vẫn không thấy ứng viên tốt →
    kết luận "kho không có", làm nhiệm vụ trực tiếp. Đừng sa lầy.
 5. **Dừng sớm khi đủ tốt:** ứng viên khớp ≥80% mô tả nhiệm vụ → chọn luôn,
@@ -283,7 +283,7 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 | nexu-io-html-anything | 81 | HTML agentic editor, 75 skills × 9 surface |
 | freshtechbro-claudedesignskills | 90 | Web hiện đại: 3D, animation, design system |
 | kazdenc-builder-skills | 48 | PM + frontend + fullstack + browser |
-| lukedj78-dev-flow | 53 | Idea → product: 50 skills theo pipeline |
+| lukedj78-dev-flow | 56 | Idea → product: 50 skills theo pipeline |
 | stareezy-1-frontend-architecture-skill | 6 | Kiến trúc frontend agnostic (React/RN) |
 | lucianomenddes-frontend-skills | 2 | React 19, Next.js 15, shadcn-ui |
 | sickn33 / opencode-awesome / agentskillexchange | 8339/4850/3151 | Kho dự trữ khi nguồn trên không đủ |
@@ -306,8 +306,8 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 
 | Nguồn | Skills | Điểm mạnh |
 |---|---|---|
-| hookdeck-webhook-skills | 183 | Webhook integration từng bước (Stripe, GitHub, Slack...) |
-| TencentCloudBase-CloudBase-AI-Toolkit | 146 | Backend CloudBase: DB, auth, functions |
+| hookdeck-webhook-skills | 810 | Webhook integration từng bước (Stripe, GitHub, Slack...) |
+| TencentCloudBase-CloudBase-AI-Toolkit | 209 | Backend CloudBase: DB, auth, functions |
 | supabase-agent-skills | 2 | CHÍNH CHỦ Supabase (CLI, migrations) |
 | skills-md | 43 | fastapi, spring, docker, java, python |
 | JPeetz-agent-skills | 69 | Nhóm api-backend: GraphQL, HAR, social API |
@@ -321,8 +321,8 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 
 | Nguồn | Skills | Điểm mạnh |
 |---|---|---|
-| expo-skills | 26 | CHÍNH CHỦ Expo + EAS |
-| gabuldev-flutter-skills | 15 | Flutter: Clean Architecture, Cubit, DI, theming |
+| expo-skills | 25 | CHÍNH CHỦ Expo + EAS |
+| gabuldev-flutter-skills | 16 | Flutter: Clean Architecture, Cubit, DI, theming |
 | Code-with-Beto-skills | 4 | Mobile dev ship nhanh hơn |
 | Appllama-appllama-skills | 2 | Pattern native app từ top-grossing |
 | conorluddy-ios-simulator-skill | 1 | Điều khiển iOS Simulator từ agent |
@@ -338,7 +338,7 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 |---|---|---|
 | skills-md | 43 | python, fastapi, docker, pytest... |
 | aiagentskills-skills | 191 | typescript, finance, downloader... |
-| sickn33-agentic-awesome-skills | (trong 8360) | Rất nhiều python chuyên biệt |
+| sickn33-agentic-awesome-skills | (trong 8969) | Rất nhiều python chuyên biệt |
 | KDenseAI-scientific-agent-skills | (trong 177) | Python cho khoa học (numpy, scipy...) |
 
 - **Grep:** `python|pandas|numpy|fastapi|pytest|asyncio|pip|uv\b`
@@ -378,7 +378,7 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 
 | Nguồn | Skills | Điểm mạnh |
 |---|---|---|
-| affaanm-ecc | 1062 | Harness performance: memory, instincts, security |
+| affaanm-ecc | 1068 | Harness performance: memory, instincts, security |
 | NVIDIA-skills | 412 | RAG, cuDF, robotics (chính chủ) |
 | abhisheksharma-skills-graph | 93 | LangGraph, Stripe, Prisma, Cloudflare (deep stack) |
 | ml4t-skills | 61 | ML quant leakage-safe, backtest, validation |
@@ -401,7 +401,7 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 | Nguồn | Skills | Điểm mạnh |
 |---|---|---|
 | datadog-agent-skills | 54 | CHÍNH CHỦ Datadog: monitors, logs, APM, RUM |
-| getsentry-skills | 29 | CHÍNH CHỦ Sentry: debugging, issue triage |
+| getsentry-skills | 30 | CHÍNH CHỦ Sentry: debugging, issue triage |
 | NotHarshhaa-devops-skills | 15 | k8s, terraform, CI/CD, backup, cloud cost |
 | farmage / polip-opencode-skills | 134/132 | SRE, chaos engineering, k8s |
 | craigspaterson-agent-skills | 7 | terraform-docs, Azure DevOps |
@@ -468,8 +468,8 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 
 | Nguồn | Skills | Điểm mạnh |
 |---|---|---|
-| minhnv0807-ai-business-skills | 144 | ★ 138 skills marketing SONG NGỮ VIỆT–ANH (69 VN + 69 Global) |
-| coreyhaines31-marketingskills | 50 | CRO, copywriting, SEO, analytics, growth |
+| minhnv0807-ai-business-skills | 147 | ★ 138 skills marketing SONG NGỮ VIỆT–ANH (69 VN + 69 Global) |
+| coreyhaines31-marketingskills | 53 | CRO, copywriting, SEO, analytics, growth |
 | thatrebeccarae-claude-marketing | 56 | "Phòng marketing đầy đủ": Klaviyo, Shopify, GA4, Looker |
 | antoineghigny-marketing-skills | 44 | Marketing/SEO/sales cho OpenCode |
 | zubairtrabzada-ai-marketing-claude | 15 | 15 skills marketing + parallel subagents |
@@ -534,7 +534,7 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 
 | Nguồn | Skills | Điểm mạnh |
 |---|---|---|
-| calesthio-OpenMontage | 139 | Hệ video production agentic: 12 pipeline, 100+ tools |
+| calesthio-OpenMontage | 140 | Hệ video production agentic: 12 pipeline, 100+ tools |
 | nicojunk-claude-ig | 14 | Instagram content engine (13 sub-skill) |
 | TryWorld2026-paper-algorithm | 3 | 1 câu → video voiceover hoàn chỉnh |
 | tonkotsuboy-x-impact-checker | 1 | Đánh giá viral-potential bài X/Twitter |
@@ -556,9 +556,9 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 
 | Nguồn | Skills | Điểm mạnh |
 |---|---|---|
-| mohitagw15856-pm-claude-skills | 2856 | ★ 1.255+ skills PM chuyên nghiệp: PRD, postmortem, roadmap |
+| mohitagw15856-pm-claude-skills | 2894 | ★ 1.255+ skills PM chuyên nghiệp: PRD, postmortem, roadmap |
 | OthmanAdi-planning-with-files | 18 | Planning bằng file markdown, crash-proof |
-| lukedj78-dev-flow | 53 | .workflow contract + 50 skills idea → product |
+| lukedj78-dev-flow | 56 | .workflow contract + 50 skills idea → product |
 | kazdenc-builder-skills | 48 | 47 skills PM + dev + browser |
 | timmo001-skills | 51 | plan, code-review, diagnose, home-assistant |
 | craigspaterson-agent-skills | 7 | user-story, create-pr, ADO |
@@ -571,7 +571,7 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 
 | Nguồn | Skills | Điểm mạnh |
 |---|---|---|
-| affaanm-ecc | 1062 | Harness: memory, instincts, security, research ops |
+| affaanm-ecc | 1068 | Harness: memory, instincts, security, research ops |
 | magnus919-agent-skills | 186 | Skill format/eval, risk, ADR, agent-ops |
 | JuliusBrussee-caveman | 28 | Cắt ~65% token mà giữ chất lượng |
 | open-hax-opencode-skills | 125 | Tạo skill ĐÚNG CHUẨN (dùng khi cần viết skill mới) |
@@ -609,7 +609,7 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 
 | Nguồn | Skills | Điểm mạnh |
 |---|---|---|
-| TencentCloudBase-CloudBase-AI-Toolkit | 146 | Backend Tencent CloudBase cho AI agent |
+| TencentCloudBase-CloudBase-AI-Toolkit | 209 | Backend Tencent CloudBase cho AI agent |
 | EthanYoQ-Skill-hub | 271 | 55 skills Trung/Anh: media, business, agent |
 | JimLiu-baoyu-skills | 22 | Nội dung tiếng Trung (baoyu) |
 | aliilhangis-n8n-skill-claude | 1 | n8n workflow automation |
@@ -635,9 +635,9 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 | NVIDIA-skills | 412 | AI/GPU/CUDA | Chính chủ NVIDIA |
 | vercel-agent-skills | 9 | Next.js/Vercel | Chính chủ Vercel |
 | datadog-agent-skills | 54 | Monitoring | Chính chủ Datadog |
-| getsentry-skills | 29 | Monitoring/debug | Chính chủ Sentry |
+| getsentry-skills | 30 | Monitoring/debug | Chính chủ Sentry |
 | supabase-agent-skills | 2 | Backend DB | Chính chủ Supabase |
-| expo-skills | 26 | Mobile/Expo | Chính chủ Expo |
+| expo-skills | 25 | Mobile/Expo | Chính chủ Expo |
 | kepano-obsidian-skills | 6 | Obsidian | Tác giả Obsidian |
 | KDenseAI-scientific-agent-skills | 177 | Khoa học | #1 science skills |
 | ThomasMoreAI-legal-skills | 20293 | Luật | 54 quốc gia |
@@ -648,13 +648,13 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 
 | Nguồn | Skills | Domain |
 |---|---|---|
-| sickn33-agentic-awesome-skills | 8360 | Hub mirror: ~2.712 tên riêng nhưng đa số là bản copy của nguồn khác → 39 entry ghi về nguồn này, nội dung vẫn tìm thấy qua nguồn gốc |
+| sickn33-agentic-awesome-skills | 8969 | Hub mirror: phần lớn file là bản copy của nguồn khác → 362 entry ghi về nguồn này, nội dung vẫn tìm thấy qua nguồn gốc |
 | opencode-awesome-skills | 4850 | Tổng hợp: slide, 3D web, marketing... |
 | agentskillexchange-skills | 3151 | Catalog: browser, image, media, email... |
 | opencode-skills-collection | 2662 | github, marketing, system... |
-| affaanm-ecc | 1062 | Agent harness performance |
+| affaanm-ecc | 1068 | Agent harness performance |
 | ericgrill-plugins | 959 | Marketplace plugin |
-| alirezarezvani-claude-skills | 846 | 380 skills + 30 agents + 70 commands |
+| alirezarezvani-claude-skills | 476 | 380 skills + 30 agents + 70 commands |
 | agent-skills-hub-gamedev | 813 | Game dev router |
 | mouadja02-skills | 807 | 36 nhóm: AWS, design-UI, devops, finance |
 | HimanshuJ16-Algo-Trading-Skills | 501 | Algo trading + code chạy được |
@@ -665,10 +665,10 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 | aiagentskills-skills | 191 | UI/UX, finance, typescript |
 | magnus919-agent-skills | 186 | Eval, risk, ADR, agent-ops |
 | wshobson-agents | 185 | Plugin marketplace đa harness |
-| hookdeck-webhook-skills | 183 | Webhook integration |
-| TencentCloudBase-CloudBase-AI-Toolkit | 146 | Backend CloudBase |
+| hookdeck-webhook-skills | 810 | Webhook integration |
+| TencentCloudBase-CloudBase-AI-Toolkit | 209 | Backend CloudBase |
 | uphiago-recon-skills | 146 | Recon/pentest pack |
-| calesthio-OpenMontage | 139 | Video production |
+| calesthio-OpenMontage | 140 | Video production |
 | claude-office-skills | 137 | Văn phòng MCP |
 | farmage / polip-opencode-skills | 134/132 | DevOps/kiến trúc/testing |
 | open-hax-opencode-skills | 125 | Tạo skill chuẩn, clojure, agile |
@@ -681,9 +681,9 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 | ml4t-skills | 61 | Quant ML |
 | JPeetz-agent-skills | 69 | Đa nhóm devops/security/API |
 | timmo001-skills | 51 | plan, review, diagnose |
-| coreyhaines31-marketingskills | 50 | Marketing |
+| coreyhaines31-marketingskills | 53 | Marketing |
 | kazdenc-builder-skills | 48 | PM + fullstack |
-| lukedj78-dev-flow | 53 | Idea → product pipeline |
+| lukedj78-dev-flow | 56 | Idea → product pipeline |
 
 ### Tier B — chuyên biệt, nhỏ, dùng khi domain khớp
 
@@ -691,7 +691,7 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 |---|---|---|
 | JanSzewczyk-claude-plugins | 42 | Next.js, Firebase, PM |
 | skills-md | 43 | Ngôn ngữ/framework |
-| mintuz-skills | 43 | Web + iOS |
+| mintuz-skills | 131 | Web + iOS |
 | Deep-Research-skills | 20 | Deep research |
 | ClaudeTools-marketplace | 25 | Exploring codebase, debugger |
 | thedesignproject-agent-skills | 23 | Design/figma/marketing |
@@ -702,7 +702,7 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 | addyosmani-agent-skills | 25 | Engineering production |
 | ImpertioStudio-threejs-skills | 24 | Three.js |
 | OthmanAdi-planning-with-files | 18 | Planning |
-| gabuldev-flutter-skills | 15 | Flutter |
+| gabuldev-flutter-skills | 16 | Flutter |
 | NotHarshhaa-devops-skills | 15 | DevOps |
 | obra-superpowers | 15 | TDD/debug/brainstorm |
 | nicojunk-claude-ig | 14 | Instagram |
@@ -774,13 +774,13 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 |---|---|---|
 | foryourhealth-vibe-skills | 258 | Skill routing + workflow orchestration cho agent |
 | simota-agent-skills | 96 | 90 chuyên gia AI + 3 extension dự án |
-| gamedevskills-awesome-gamedev | 75 | Godot, Unity, Unreal, Phaser, PixiJS, three.js |
+| gamedevskills-awesome-gamedev | 78 | Godot, Unity, Unreal, Phaser, PixiJS, three.js |
 | ImpertioStudio-frappe-skills | 61 | Frappe Framework + ERPNext v14–16 |
 | datagoblin-power-bi-skills | 35 | Power BI agentic development |
 | bytedance-deer-flow | 33 | SuperAgent harness (ByteDance): research, code, create |
 | iOfficeAI-OfficeCLI | 12 | Office suite cho AI agent (đọc/sửa/CREATE) |
 | yzhao062-anywhere-agents | 12 | 1 config cho mọi agent, portable |
-| kerpopule-hermes-jev-skills | 11 | Model routing, memory, compaction, skill selection |
+| kerpopule-hermes-jev-skills | 13 | Model routing, memory, compaction, skill selection |
 | danium-lateral-thinking | 10 | Lateral thinking (de Bono): 8 kỹ thuật + router |
 | Egonex-understand-anything | 9 | Code → knowledge graph tương tác |
 | SvenMirana-sublation | 9 | Skill governance đa agent, shadow routing |
@@ -797,26 +797,26 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 | Nguồn | Skills | Domain |
 |---|---|---|
 | brycewang-journal-skills | 4166 | P · Viết/HT |
-| mohitagw15856-pm-claude-skills | 2856 | V · PM |
+| mohitagw15856-pm-claude-skills | 2894 | V · PM |
 | opencode-ultimate-skills | 384 | S · Design |
 | aizech-clinical-skills | 226 | M · Ysinh |
-| minhnv0807-ai-business-skills | 144 | O · Mkt |
+| minhnv0807-ai-business-skills | 147 | O · Mkt |
 | farmage-opencode-skills | 134 | C · Backend |
-| first-fluke-oh-my-agent | 95 | GEN · — |
+| first-fluke-oh-my-agent | 150 | GEN · — |
 | LerianStudio-ring | 76 | C · Backend |
 | gamedev-awesome-skills | 75 | R · Game |
 | vaquarkhan-data-eng-skills | 74 | I · Data |
 | Aperivue-medsci-skills | 63 | M · Ysinh |
 | thatrebeccarae-claude-marketing | 56 | O · Mkt |
 | brainbytes-finance | 51 | N · Tài chính |
-| EtherealMingo-university-teacher | 49 | P · Viết/HT |
+| EtherealMingo-university-teacher | 51 | P · Viết/HT |
 | gajeto-financeskills | 48 | N · Tài chính |
 | theonly1me-shadowclone | 46 | W · Meta |
 | antoineghigny-marketing-skills | 44 | O · Mkt |
 | openaccountant-skills | 44 | N · Tài chính |
 | composio-support-skills | 40 | C · Backend |
 | unknown333-data-eng-skills | 37 | I · Data |
-| aws-devops-agent-skills | 34 | J · DevOps |
+| aws-devops-agent-skills | 43 | J · DevOps |
 | madebymustafa-design-taste | 24 | S · Design |
 | acnlabs-openpersona | 19 | W · Meta |
 | surendranb-writing-skills | 17 | P · Viết/HT |
@@ -885,6 +885,19 @@ node -e "const a=require('D:/Skills/index.json');const m={};for(const s of a){if
 | zeked-finance-super | 1 | N · Tài chính |
 | zippoxer-subtask | 1 | W · Meta |
 
+
+### Bổ sung đợt 13 (10–11/2026, Tier B trừ khi ghi chú)
+
+| Nguồn | Skills | Domain |
+|---|---|---|
+| antigravity-awesome-skills | 889 | C · Backend |
+| Skillry | 57 | GEN · Khác |
+| threeui | 43 | B · Web 3D |
+| hyperframes | 27 | T · Media |
+| muratcankoylan-agent-skills-for-context-engineering | 24 | W · Meta |
+| emilkowalski-skills | 16 | S · Design (Tier S — chính chủ) |
+| animate-ui | 1 | S · Design |
+
 ### Tier C — 0 skills (tài liệu / công cụ, chỉ đọc khi cần meta)
 
 agentskills-spec (đặc tả chuẩn skill) · awesome-claude-skills ·
@@ -892,7 +905,7 @@ VoltAgent-awesome-agent-skills (list 1000+ link) · BadMenFinance-awesome-skill-
 skillmdcreator-examples (mẫu theo vai trò) · EverMind-SkillCorpus (corpus/retrieval) ·
 claude-market-marketplace · linny006-plugin-tracker · cnhsn-opencode-skills (installer) ·
 opencode-skill-scanner (plugin tự bơm skills) · Graphify-Labs-graphify (upstream đã rỗng) ·
-zhwenchao-jungian-soul-skills (nội dung không có SKILL.md)
+zhwenchao-jungian-soul-skills (nội dung không có SKILL.md) · motion-skills (repo rỗng)
 
 ---
 
@@ -1048,7 +1061,7 @@ Claude Code tại `~/.claude/skills/` và mọi agent đọc chuẩn
 tầm thường đều bắt đầu bằng `find-skill.mjs` và kết thúc bằng
 `log-skill.mjs` (nhật ký `usage-log.md` tích lũy kinh nghiệm giữa các
 phiên). KHÔNG đăng ký cả thư mục `D:\Skills` vào `skills.paths` (sẽ nạp
-mô tả ~42.100 skills → nổ ngữ cảnh).
+mô tả ~43.700 skills → nổ ngữ cảnh).
 
 ---
 

@@ -14,8 +14,8 @@
 ## Số liệu
 
 - **Vị trí:** `D:\Skills`
-- **Quy mô:** 240 nguồn, ~60.500 file SKILL.md (~42.100 skills duy nhất sau
-  khi lọc trùng lặp 2 lớp), tổng dung lượng ~3,9 GB (giới hạn cho phép: 10 GB).
+- **Quy mô:** 248 nguồn, ~62.700 file SKILL.md (~43.700 skills duy nhất sau
+  khi lọc trùng lặp 2 lớp), tổng dung lượng ~5,1 GB (giới hạn cho phép: 10 GB).
 - **Phạm vi:** web, mobile, backend, Python, C++, thuật toán, AI/ML, data,
   DevOps, security, luật, y sinh, tài chính, marketing, văn phòng, game,
   thiết kế, media, nghiên cứu... (26 nhóm lĩnh vực).
@@ -27,7 +27,7 @@ D:\Skills\
 ├── README.md            ← file này (giới thiệu sơ qua)
 ├── SKILLS.md            ← ★ QUAN TRỌNG NHẤT — AI agent phải đọc file này đầu tiên
 ├── usage-log.md         ← nhật ký skill đã dùng + kết quả (tích lũy taste giữa các phiên)
-├── INDEX.md             ← chỉ mục ~42.100 skills [kèm domain A–Z] — chỉ dùng GREP
+├── INDEX.md             ← chỉ mục ~43.700 skills [kèm domain A–Z] — chỉ dùng GREP
 ├── index.json           ← chỉ mục máy đọc [{name, description, path, domain}] — chỉ LỌC
 ├── sources.json         ← thống kê nguồn (+ commit SHA + ngày cập nhật từng nguồn)
 ├── security.json        ← kết quả quét an ninh scripts (skill nào có cờ RISK)
@@ -39,7 +39,7 @@ D:\Skills\
 │   ├── cache.mjs        ← session checkpoint (trí nhớ ngoài giữa các phiên)
 │   ├── log-skill.mjs    ← ★ ghi nhật ký dùng skill: log-skill "<skill>" "<task>" good|ok|bad
 │   └── update-library.ps1 ← pull toàn bộ + rebuild + quét an ninh (chạy tay hoặc hẹn giờ)
-└── <ten-nguon>/         ← 240 thư mục nguồn (mỗi nguồn = 1 repo/bộ sưu tập)
+└── <ten-nguon>/         ← 248 thư mục nguồn (mỗi nguồn = 1 repo/bộ sưu tập)
     └── .../SKILL.md     ← file skill (nằm ở độ sâu bất kỳ trong nguồn)
 ```
 
@@ -55,7 +55,7 @@ D:\Skills\
 3. Task chạm **nhiều domain cùng lúc** → dùng skill `sgeneral`.
 4. Sau khi dùng: `node tools\log-skill.mjs "<skill>" "<task>" good|ok|bad`
    — các phiên sau đọc `usage-log.md` để ưu tiên skill đã chạy tốt.
-5. Tuyệt đối **không đọc nguyên** `INDEX.md` (~42.100 dòng) hay `index.json`
+5. Tuyệt đối **không đọc nguyên** `INDEX.md` (~43.700 dòng) hay `index.json`
    (~14 MB) — chỉ grep/lọc lấy phần cần.
 
 ## Dùng với các agent khác

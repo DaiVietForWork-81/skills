@@ -2,8 +2,8 @@
 
 ## Thư viện Skills tại D:\Skills
 
-Máy này có thư viện skills dùng chung tại `D:\Skills` (~42.149 skills,
-240 nguồn, 26 domain), dùng được cho opencode, Claude Code, Codex, Gemini CLI,
+Máy này có thư viện skills dùng chung tại `D:\Skills` (~43.756 skills,
+248 nguồn, 26 domain), dùng được cho opencode, Claude Code, Codex, Gemini CLI,
 Antigravity (và mọi agent đọc AGENTS.md). Skill duy nhất `sgeneral`
 (Router tìm kiếm & Master Orchestrator tích hợp) đã đăng ký toàn cục.
 

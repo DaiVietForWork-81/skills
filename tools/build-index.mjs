@@ -94,6 +94,11 @@ const PATH_OVERRIDES = {
   'steve-magne-hookstack': 'W', 'opencode-agent-skills': 'W', 'opencode-skills-list': 'W',
   'acnlabs-openpersona': 'W', 'titanwings-distilly': 'W', 'Egonex-understand-anything': 'W',
   'Tubo2333-knowledge-brain': 'X', 'zhayujie-CowAgent': 'X',
+  // — đợt 13 (10-11/2026): nguồn mới từ các phiên Orbit —
+  'hyperframes': 'T',                       // animation/video framework
+  'threeui': 'B',                           // Three.js UI components
+  'emilkowalski-skills': 'S',               // chính chủ Emil Kowalski (design engineering)
+  'muratcankoylan-agent-skills-for-context-engineering': 'W', // context engineering
 };
 
 function classify(text, srcName) {
